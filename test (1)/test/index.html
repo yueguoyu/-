@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="gbk" />
+		<meta name="applicable-device" content="mobile">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta content="yes" name="mobile-web-app-capable">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta name="robots" content="all" />
+		<meta name="author" content="Tencent-TGideas" />
+		<meta name="description" content="《QQ飞车》是首款腾讯自主研发的竞速类休闲网络游戏，底层架构基于世界领先的物理引擎PhysX，游戏手感全面超越市场同类产品，全力为用户打造逼真的驾驶体验；3D时尚人物造型、古朴潮流幻想的赛道主题、第三人称尾随视角，力求为用户营造身历其境的感觉。在2011年的5月，最高同时在线帐户数突破200万，乃中国网游史上第九款同时在线冲破百万大关的产品，并为全球游戏市场奉献了第一款同时在线破百万的竞速类网络游戏，同时，也使腾讯拥有了第一款同时在线破百万的自主研发产品。" />
+		<meta name="keywords" content="QQ飞车,飞车,QQ飞车官网,QQ飞车官方下载,QQ飞车,QQ飞车新手,QQ飞车音乐,QQ飞车视频,QQ飞车论坛,QQ飞车入门,QQ飞车比赛，QQ飞车图标,客户端下载,SSC超级联赛,赛车游戏,卡丁车,休闲区,同城交友,跑跑,跑跑卡丁车,最好玩,时尚,时尚赛车,剃刀,针尖,针尖杯,腾讯游戏,视频,WCG,赛道视频,沉睡森林,海滨发夹,海洋公园,漂移,飞车宝贝,宝贝,车队,QQ飞车车队，QQ飞车下载" />
+		<title>pick你心中的亚洲车王-《QQ飞车手游》官方网站-腾讯唯一官方正版，开启竞速手游新纪元</title>
+		<!-- 设计：南京欣海 | 重构：南京欣海 | 创建：20190801 -->
+		<style>
+			/* reset */
+			body, div, p, ul, li, table, tbody, tr, td, textarea, form, input, h1, h2, h3, h4, h5, dl, dt, dd, img, iframe, header, nav, section, article, footer, figure, figcaption, menu{margin: 0;padding: 0;list-style: none;}
+			body{background: #150a0c;font-size: 0.24rem;-webkit-text-size-adjust: none; }
+			header, nav, section, article, footer, figure, figcaption{display: block;}
+			ol, ul{margin: 0;padding: 0;}
+			fieldset{border: none;margin: 0;padding: 0;}
+			a, li, ul, [onclick]{-webkit-tap-highlight-color: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+			table{border-collapse: collapse;border-spacing: 0;}
+			em, strong{font-weight: normal;font-style: normal;}
+			/* basic */
+			.c:before, .c:after{content: '';display: table}
+			.c:after{clear: both}
+			.c{zoom: 1}
+			a{text-decoration: none;}
+			.wrap{width: 100%;overflow: hidden;position: relative;}
+			.hide{display: block;width: 0;height: 0;overflow: hidden;}
+			img{display: block}		
+			/* footer */
+			#afooter {position: relative;padding: 0.2rem 0;background: #333;color: #eee;font-size: 0.22rem;line-height: 1.2;text-align: center;}
+			#afooter a {color: inherit;}	
+			/*content*/
+			.ma{margin: 0 auto;}
+     		.pa{position: absolute;}
+     		.pr{position: relative;}
+     		.fl{float: left;}
+     		.fr{float: right;}
+			.sp{background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/sp.png)   no-repeat; background-size:10rem 10rem; -webkit-background-size:10rem 10rem;}
+			.wrap{width: 6.4rem; height: 28.9rem;  background:  url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/bg.jpg)     no-repeat;  background-size:6.4rem 28.9rem; -webkit-background-size: 6.4rem 28.9rem;}
+			.head{width: 6.4rem; height: 9rem; position: relative;}
+			.head_desc{font-size: 0.2rem; color: #a694c7; text-align: center; padding-top: 7.58rem;}
+			.head_desc1{font-size: 0.2rem; color: #a694c7; text-align: center;}
+			.btn_gz{display: block; width: 1.65rem; height: 0.56rem; background-position: -0.24rem -0.29rem; margin-right: 0.1rem;}
+			.head img{display: block; width: 1.13rem; height: 1.13rem;  margin-top:0.25rem; margin-left: 2.6rem; }
+			.img_desc{font-size: 0.35rem; font-weight: bold;  position: absolute; top: 8.2rem; left: 3.9rem; line-height: 0.35rem;    background: -webkit-linear-gradient(#70a6d6, #a29bf5);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+			.ct1{width:100%; height: 7rem; }
+			.ct1_inne{width: 100%; height: 5.39rem; padding-top: 0.1rem; }
+			.btn_top1,.btn_top2,.btn_top3,.btn_top4{display: block; width: 1.19rem; height: 1.19rem; position: absolute;     border-radius: 50%; overflow: hidden;}
+			.btn_top1 a,.btn_top2 a,.btn_top3 a,.btn_top4 a{display: block; width: 100%; height: 100%;}
+			.btn_top1 img,.btn_top2 img,.btn_top3 img,.btn_top4 img{ width: 1.19rem; height: 1.19rem; position: absolute; top: 0rem; left: 0rem;}
+			.btn_top1 img{display: block;}
+			.btn_top2 img{display: none;}
+			.btn_top3 img{display: none;}
+			.btn_top4 img{display: none;}
+			.btn_top1{    top: 0.7rem; left: 2.6rem;}
+			.btn_top2{    top: 2.42rem; left: 2.6rem;}
+			.btn_top3{    top: 3.95rem; left: 1.09rem; }
+			.btn_top4{top: 3.95rem; right: 1.09rem;}
+			.btn_ok,.btn_rema{display: block; width: 2.1rem; height: 0.7rem;  background-position: -0.2rem -1.1rem; font-size: 0.3rem; font-weight: bold; color: #5d220d; text-align: center; line-height: 0.65rem;}
+			.btn_ok{margin-left: 0.7rem;}
+			.btn_rema{margin-right: 0.7rem;}
+			.btn_ct1_on{background-position: -0.27rem -2.01rem; color: #54486f;}
+			.ct2{width: 100%; height: 6.15rem;}
+			.ct2_inne1,.ct2_inne2,.ct2_inne3,.ct2_inne4{width: 6.2rem; height: 1.3rem; margin-left: 0.2rem; position: relative;}
+			.ct2_inne1{padding-top: 1.09rem; padding-bottom: 0.27rem;}
+			.ct2_inne3{padding-top: 0.42rem; padding-bottom: 0.4rem;}
+			.ct2_inne1 img{width: 2.31rem; height: 1.28rem; position: absolute; top: 1.1rem; left: 2.05rem; background-size:2.31rem 1.28rem; -webkit-background-size:2.31rem 1.28rem;}
+			.ct2_inne2 img,.ct2_inne4 img{width: 2.31rem; height: 1.28rem; position: absolute; top: 0rem; left: 2.05rem; background-size:2.31rem 1.28rem; -webkit-background-size:2.31rem 1.28rem;}
+			.ct2_inne3 img{width: 2.31rem;; height: 1.28rem; position: absolute; top: 0.45rem; left: 2.05rem; background-size:2.31rem; 1.28rem; -webkit-background-size:2.31rem; 1.28rem;}
+			.ct2_inne1 p,.ct2_inne2 p,.ct2_inne3 p,.ct2_inne4 p{font-size: 0.18rem; color: #e8daff; padding-top: 0.05rem; padding-left: 0.1rem;}
+			.ct2_inne1 a,.ct2_inne2 a,.ct2_inne3 a,.ct2_inne4 a{display: block; width: 1.65rem; height: 0.56rem; background-position: -0.49rem -3.09rem; margin-right: 0.25rem; margin-top: 0.1rem; }
+			.ct2 .ct2_img_desc{font-size: 0.2rem; color: #ffffff; display: block; width: 2.4rem; height: 0.36rem; position: absolute; top: 0.87rem; left: 1.9rem; text-align: center; line-height: 0.36rem;}
+			.ct2_inne1 .ct2_img_desc{font-size: 0.2rem; color: #ffffff; display: block; width: 2.6rem; height: 0.36rem; position: absolute; top: 1.95rem; left: 1.9rem; text-align: center; line-height: 0.36rem;}
+			.ct2_inne3 .ct2_img_desc{top: 1.3rem;}
+			.ct3{width: 100%; height: 6.67rem;}
+			.ct3_inne{width: 100%; height: 4.37rem; padding-top: 0.85rem;}
+			.ct3_inne1,.ct3_inne2,.ct3_inne3,.ct3_inne4{display: block; width: 1.38rem; height: 3.12rem; position: absolute;}
+			.ct3_inne1{top: 1.6rem; left: 0.15rem;}
+			.ct3_inne2{top: 0.99rem; left: 1.72rem;}
+			.ct3_inne3{top: 1.6rem; left: 3.3rem;}
+			.ct3_inne4{top: 0.99rem; left: 4.87rem;}
+			.v_bg{display: block; width: 1.36rem; height: 2.48rem; background-size:1.36rem 2.48rem; -webkit-background-size: 1.36rem 2.48rem; position: absolute;     top: 0.01rem; left: 0.01rem;}
+			.ct3_inne1 .p_des,.ct3_inne2 .p_des,.ct3_inne3 .p_des,.ct3_inne4 .p_des{display: block; width: 0.8rem; height: 0.26rem; position: absolute;  top: 0.12rem; right: -0.1rem; font-size: 0.18rem; color: #662e13;}
+			.flag_img{display: block; width: 0.47rem; height: 0.32rem; background-size: 0.47rem 0.32rem; -webkit-background-size: 0.47rem 0.32rem; position: absolute; top: 2.23rem; left: 0;}
+			.btn_ct3_inne{display: block; width: 100%; height: 81%;}
+			.btn_ct3_inne span{display: block; width: 0.45rem; height: 0.45rem; background-position: -5.45rem -2.58rem; position: absolute;     top: 32%;left: 32%;}
+			.ct3_inne_desc{display: block; width: 100%; height: 0.46rem; font-size: 0.18rem; line-height: 0.2rem; color: #eae3ff; text-align: center; margin-top: 0.22rem; margin-left: 0.05rem;}
+			.ct3_desc{text-align: center; font-size:0.18rem; color: #bcaee8; padding-bottom: 0.15rem;}
+			.btn_ct3{display: block; width: 2.05rem; height: 0.7rem; background-position: -0.4rem -4.14rem; }
+			.pop1{display:none; width:  5.46rem; height: 4.8rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop1_bg.png) no-repeat; background-size: 5.46rem 4.8rem; -webkit-background-size: 5.46rem 4.8rem;}
+			.pop1 .dia-close{    font-size: 0.5rem; display: block;  width: 0.5rem; height: 0.5rem;  position: absolute;     top: 0.7rem;  right: -0.2rem; text-align: center; line-height: 0.5rem; color: #ffc249;}
+			.pop1 div{width: 100%; height: 0.62rem; padding-top: 2.35rem;}
+			.btn_yes,.btn_no{display: block; width: 1.16rem; height: 0.48rem;}
+			.btn_yes{margin-left: 1.97rem;}
+			.btn_no{margin-right: 0.8rem;}
+			.pop2{display:none; width:  5.19rem; height: 3.57rem; background:  url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/fore_bg.png) no-repeat; background-size: 5.19rem 3.57rem; -webkit-background-size: 5.19rem 3.57rem;}
+			.pop2 .dia-close{    font-size: 0.5rem; display: block;  width: 0.5rem; height: 0.5rem;  position: absolute;         top: -0.1rem; right: -0.4rem; text-align: center; line-height: 0.5rem; color: #9379cf;}
+			.pop2 p span{display: block;  font-size: 0.26rem; color: #faf3b2; font-weight: bold; text-align: center; padding-top: 0.2rem; line-height: 0.4rem;} 
+			.pop2 p b{display: block; font-size: 0.36rem; text-align: center; color: #FFFFFF;}
+			.pop2 .btn_under{display: block; width: 1.56rem; height: 0.53rem;     background-position: -0.4rem -8.16rem;}
+			.pop3{display:none; width:  5.19rem; height: 2.72rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop3_bg.png) no-repeat; background-size: 5.19rem 2.72rem; -webkit-background-size:  5.19rem 2.72rem;}
+			.pop4{display:none; width:  5.69rem; height: 2.72rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop4_bg.png)  no-repeat; background-size: 5.69rem 2.72rem; -webkit-background-size:  5.69rem 2.72rem;}
+			.pop3 .dia-close,.pop4 .dia-close{    font-size: 0.5rem; display: block;  width: 0.5rem; height: 0.5rem;  position: absolute;         top: -0.1rem; right: -0.4rem; text-align: center; line-height: 0.5rem; color: #9379cf;}
+			.pop3 .btn_pop,.pop4 .btn_pop{display: block; width: 2.06rem; height: 0.5rem; margin: 1.9rem auto 0;}
+			.pop_video{display: none; width: 5.42rem; height: 2.85rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop6_video_bg.png) no-repeat; background-size: 5.42rem 2.85rem; -webkit-background-size:  5.42rem 2.85rem;}
+			.video { left: 0.05rem; top: 0.04rem; z-index: 20; position: absolute; width: 5rem; height: 2.76rem; /*border:0.01rem solid #ffca8c;*/}
+			.pop_video a{display: block; width: 0.32rem; height: 0.32rem; position: absolute;     top: -0.1rem; right: -0.1rem; font-size: 0.45rem; color: #ab97d0;}
+			.btn_ok_p1{font-size: 0.18rem; color: #9e8dcb; top: 0.7rem; left: 0.99rem;}
+			.btn_ok_p1 em{display: inline-block; width: 0.32rem; height: 0.32rem; background-position:-5.26rem -0.17rem;}
+			.btn_ok_p1 span{display: inline-block; width: 0.32rem; height: 0.32rem; background-position:-5.26rem -0.65rem; }
+			.btn_ok_p2{font-size: 0.18rem; color: #9e8dcb; text-align: center; top: 0.7rem; left: 3.7rem;}
+			.btn_ok_p2 span{display: inline-block; width: 0.35rem; height: 0.32rem; background-position:-5.28rem -1.2rem;} 
+			.btn_agen{display: block; width: 0.6rem; height: 0.6rem; position: absolute; top: 0.25rem; right: 0.2rem;} 
+			.pop5{display: none; width: 5.25rem; height: 5.1rem; }
+			.pop5_list{display: block; width: 5.25rem; height: 5.1rem;}
+			.pop5_list li{display: block; float: left; width: 1.85rem; height: 2.4rem; margin: 0.13rem 0.2rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop7_ul_bg.png) no-repeat; background-size:1.85rem 2.4rem; -webkit-background-size: 1.85rem 2.4rem; position: relative;}  
+			.pop5_list_li_on{background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop7_ul_bg1.png) no-repeat !important; background-size:1.85rem 2.4rem !important; -webkit-background-size: 1.85rem 2.4rem !important;}
+			.pop5 .dia-close{font-size: 0.45rem; position: absolute; top: -0.1rem; right: 0.2rem; color: #beb0f1;}
+			.pop5_list li img{display: block;  position: absolute;}
+			.pop5_list li .pop5_img1{ width: 2.13rem; height: 3.19rem; background-size: 2.13rem 3.19rem; -webkit-background-size: 2.13rem 3.19rem;     top: -0.55rem; left: -0.1rem;}
+			.pop5_list li .pop5_img2{width: 0.47rem; height: 0.32rem;     top: 0.05rem; left: 0.2rem;}
+			.pop5_list li span{display: block; font-size: 0.18rem; text-align: center; color: #ffffff; width: 0.96rem; height: 0.3rem; background-position:-0.75rem -7.58rem; position: absolute; top: 1.36rem; right: 0.09rem; line-height: 0.28rem;}
+			.pop5_list li em{display: block; width: 0.72rem; height: 0.61rem;  position: absolute;     bottom: -0.1rem; left: 0.75rem; background-position: -7.1rem -0.75rem;}
+			.pop5_list_em{background-position: -3.7rem -2.12rem !important;}
+			.pop5_list_span{background-position: -0.68rem -7.01rem !important;}
+			.float{position: fixed; width: 0.38rem; height: 1.28rem; right: 126px; top: 40%; z-index: 99; margin-left: 2.7rem; left: 50%; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/float_bg.png) no-repeat; background-size: 0.38rem 1.28rem; -webkit-background-size: 0.38rem 1.28rem;}
+			.btn_float{display: block; width: 100%; height: 100%; z-index: 999;}
+			.pop6{display: none; width: 5.18rem; height: 3.83rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/hd_bg.png) no-repeat; background-size: 5.81rem 3.83rem; -webkit-background-size: 5.81rem 3.83rem;}
+			.pop6 .dia-close{display: block;  font-size: 0.45rem; color: #9479d0; position: absolute; top: -0.1rem; right: -0.4rem;}
+			.pop6 ul{display: block; width: 4.65rem; height: 2.92rem; margin: 0 auto; padding-top: 0.83rem;}
+			.pop6 ul li{font-size: 0.18rem; color: #FFFFFF; line-height: 0.26rem; margin-bottom: 0.23rem;} 
+			.pop7{display: none; width: 5.18rem; height: 9.16rem; background:  /*url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop8_bg.png)*/ url(ossweb-img/pop8_bg1.png) no-repeat; background-size: 5.18rem 9.16rem; -webkit-background-size: 5.18rem 9.16rem;}
+			.pop7 .dia-close{display: block;  font-size: 0.45rem; color: #dcda5c; position: absolute; top: 0.55rem; right: -0.4rem;}
+			.pop7_img{display: block; width: 1.13rem; height: 1.13rem; background-size: 1.13rem 1.13rem; -webkit-background-size: 1.13rem 1.13rem; position: absolute;     top: 0.25rem; left: 2rem;}
+			.er_img{display: block; width: 0.86rem; height: 0.86rem; background-size: 0.86rem 0.86rem; -webkit-background-size: 0.86rem 0.86rem; position: absolute; bottom: 0.3rem; left: 0.98rem;}
+			.pop7_inne{display: block; width: 5rem; height: 4.59rem; margin-top:2.7rem;}
+			.pop7_inne div{display: block; width: 1.3rem; height: 1.3rem; position: absolute;     border-radius: 50%; overflow: hidden;}
+			.pop7_inne_1{    top: 0rem; left: 1.85rem;}
+			.pop7_inne_2{    top: 1.65rem;left: 1.85rem;}
+			.pop7_inne_3{top: 3.05rem;  left: 0.43rem;}
+			.pop7_inne_4{top: 3.05rem; right: 0.51rem;}
+			.pop7_inne_1 img,.pop7_inne_2 img,.pop7_inne_3 img,.pop7_inne_4 img{display: block; width: 1.19rem; height: 1.19rem; background-size: 1.19rem 1.19rem; -webkit-background-size: 1.19rem 1.19rem; position: absolute; top: 0.05rem; left: 0.05rem;}
+			.pop7 .dia-close{font-size: 0.45rem; color: #d5c3fe; position: absolute; top: -0.1rem; right: -0.3rem;}
+			.pop2 ul{display: block; width: 5rem; height: 1.49rem; padding-top: 1.28rem; margin: 0 auto; margin-left: 0.9rem;}
+			.pop2 ul li{display: block; width: 1.8rem; height: 100%; float: left; }
+			.pop2 ul li img{display: block; width: 1.59rem; height: 1.71rem; background-size: 1.59rem 1.71rem; -webkit-background-size: 1.59rem 1.71rem;}
+			.pop7_desc1{font-size: 0.4rem; font-weight: bold; position: absolute; top: 0.53rem; left: 3.37rem; color:#88b3f3; /*background-image: -webkit-linear-gradient(top,#86c9fb,#a09ff5); -webkit-background-clip: text; -webkit-text-fill-color: transparent;*/}
+			.btn_prese,.btn_immed{display: block; width: 1.6rem; height: 0.55rem; }
+			.btn_prese{background-position:-0.56rem -8.88rem; margin-left: 0.56rem;}
+			.btn_immed{background-position:-2.63rem -8.91rem; margin-right: 0.56rem;}
+			.pop8{display: none; width: 5.18rem; height: 3.56rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop9_bg.png) no-repeat; background-size: 5.18rem 3.56rem; -webkit-background-size: 5.18rem 3.56rem;}
+			.pop8 .dia-close,.pop9 .dia-close{font-size: 0.45rem; color: #d5c3fe; position: absolute; top: -0.1rem; right: -0.3rem;}
+			.pop8 div,.pop11 div,.pop12 div,.pop13 div{display: block; width: 100%; height: 1.77rem; margin-top: 1.27rem;}
+			.btn_qq,.btn_wx{display: block; width: 1.17rem; height: 1.17rem;}
+			.btn_qq{margin-left: 0.67rem;}
+			.btn_wx{margin-right: 0.87rem;}
+			.pop9{display: none; width: 5.18rem; height: 3.56rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop10_bg.png) no-repeat; background-size: 5.18rem 3.56rem; -webkit-background-size: 5.18rem 3.56rem;}
+			.dialogs{display: block; width: 3.37rem; height: 1.95rem; margin-top: 0.35rem;}
+			.swc_box,.swc_box1{display: block; width: 3.33rem; height: 0.44rem; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop10_inne.png) no-repeat; background-size: 3.33rem 0.44rem; -webkit-background-size: 3.33rem 0.44rem; margin-top: 0.28rem;}
+			.swc_sle{width: 2.86rem; height:99%; background-color: #a68fda; border: none; border-radius:0 0.1rem 0.1rem 0;}
+			.btn_qd,.btn_fh{display: block; width: 1.52rem; height: 0.52rem;}
+			.btn_qd{background-position: -3.54rem -5.77rem; margin-left: -0.3rem;}
+			.btn_fh{background-position: -3.54rem -6.85rem; margin-right: -0.3rem;}
+			.btn_swc p{display: block; font-size: 0.18rem; color: #c8b8f0; margin: 0.18rem auto; text-align: center;}
+			.pop10{display: none; background: url(//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop11_bg.png); width:  5.46rem; height: 4.8rem;  background-size: 5.46rem 4.8rem; -webkit-background-size: 5.46rem 4.8rem;}
+			.pop10 .dia-close{    font-size: 0.5rem; display: block;  width: 0.5rem; height: 0.5rem;  position: absolute;     top: 0.7rem;  right: -0.2rem; text-align: center; line-height: 0.5rem; color: #ffc249;}
+			
+			
+			
+			/**/
+			.pop11{position: fixed !important; top: 12% !important; left: 50% !important;  display: none; width: 5.79rem; height: 2.18rem; background: url(ossweb-img/fx_pop.png) no-repeat; background-size: 5.79rem 2.18rem; -webkit-background-size: 5.79rem 2.18rem;} 
+			.pop11 .dia-close{display: block; width: 6.4rem; height: 600%;}
+			.pop12{display: none; background: url(ossweb-img/fx_pop1.png) no-repeat; width: 5.18rem; height: 3.56rem; background-size: 5.18rem 3.56rem; -webkit-background-size: 5.18rem 3.56rem;}
+			.pop12 .dia-close{font-size: 0.45rem; color: #d5c3fe; position: absolute; top: -0.1rem; right: -0.3rem;}
+			.pop13{display: none; background: url(ossweb-img/fx_pop2.png) no-repeat; width: 5.18rem; height: 3.56rem; background-size: 5.18rem 3.56rem; -webkit-background-size: 5.18rem 3.56rem;}
+			.pop13 .dia-close{font-size: 0.45rem; color: #d5c3fe; position: absolute; top: -0.1rem; right: -0.3rem;}
+			.pop5 .btn_qd{margin-left: 1.5rem;}
+			.img_div img{z-index: 10000;  width: 5.18rem !important; height: 9.16rem !important; position: absolute;  top: -0.01rem; left: 0rem;}
+			.no{z-index: -1 !important;}
+			.pop14{display: none; width: 5.18rem; height: 9.16rem; background:  }
+			.pop14 .dia-close{display: block;  font-size: 0.45rem; color: #6a4eb6; position: absolute; top: 0.05rem; right: -0.4rem;}
+			
+			
+			canvas{display: none;}
+			#imgId{ z-index: 10000;  width:100%; height: 100%;   position: absolute; top: 0; left: 0; display: none;}
+			.imgid_on{display: block !important;}
+			#pop2_i img{display:block; width:  5.19rem; height: 3.57rem;  background-size: 5.19rem 3.57rem; -webkit-background-size: 5.19rem 3.57rem;}
+		</style>
+		<script>function AutoPage(){document.documentElement.style.fontSize=document.documentElement.clientWidth/6.4+'px'}AutoPage(),window.addEventListener('resize',AutoPage,!1);</script>
+	</head>
+	<body>
+		<div class="wrap">
+			
+			<div class="head pr">
+				<p class="head_desc">决赛时间：2019年8月18日17:00</p>
+				<p class="head_desc1">决赛地点：广州天河体育中心体育馆</p>
+				<!--<a  class="btn_gz fr sp" href="javascript:;" ontouchend="PTTSendClick('btn','btn_gz','活动规则');"></a>-->
+				<!--<img  src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/img1.png" />-->
+				<!--<p class="img_desc">xxx</p>-->
+			</div>
+			<div class="content">
+				<div class="ct1">
+					<div class="ct1_inne pr">
+						<div class="btn_top1">
+							<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+							<a   href="javascript:TGDialogS('pop5');" ontouchend="PTTSendClick('btn','btn_top1','冠军');"></a>
+						</div>
+						<div class="btn_top2">
+							<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+							<a   href="javascript:TGDialogS('pop5');" ontouchend="PTTSendClick('btn','btn_top2','亚军');"></a>
+						</div>
+						<div class="btn_top3">
+							<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+							<a   href="javascript:TGDialogS('pop15');" ontouchend="PTTSendClick('btn','btn_top3','四强');"></a>
+						</div>
+						<div class="btn_top4">
+							<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+							<a   href="javascript:TGDialogS('pop5');" ontouchend="PTTSendClick('btn','btn_top4','四强');"></a>
+						</div>
+						
+						<a  class="btn_agen" href="javascript:TGDialogS('pop10');" ontouchend="PTTSendClick('btn','btn_agen','重置');"></a>
+					</div>
+					<div class="pr">
+						<a  class="btn_ok fl sp" href="javascript:TGDialogS('pop1');" ontouchend="PTTSendClick('btn','btn_ok','我排好了！');">我排好了!</a>
+						<a  class="btn_rema  fr sp" href="javascript:TGDialogS('POP_SHARE6');" ontouchend="PTTSendClick('btn','btn_rema','秀出我的预测');">秀出我的预测</a>
+						<p class="btn_ok_p1 pa">完成预测即可获得<br/> <em class="sp"></em>×58<span class="sp"></span>×88 </p>
+						<p class="btn_ok_p2 pa">完成预测后分享即可获得<br/><span class="sp"></span>×1 </p>
+					</div>
+				</div>
+				<div class="ct2">
+					<div class="ct2_inne1">
+						<p>正确预测冠军归属即可领取本奖励</p>
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/ct2_img42.png" />
+						<p class="ct2_img_desc">亚洲荣耀（7天）+点券x588 </p>
+						<a  class="fr sp" href="javascript:TGDialogS('pop4');" ontouchend="PTTSendClick('btn','btn_ljlq1','立即领取');"></a>
+					</div>
+					<div class="ct2_inne2">
+						<p>正确预测亚军归属即可领取本奖励</p>
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/ct2_img41.png" />
+						<p class="ct2_img_desc">点券x388+科技点x388</p>
+						<a  class="fr sp" href="javascript:TGDialogS('pop4');" ontouchend="PTTSendClick('btn','btn_ljlq2','立即领取');"></a>
+					</div>
+					<div class="ct2_inne3">
+						<p>正确预测三四名（并列）其中一位归属即可领取本奖励</p>
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/ct2_img4.png" />
+						<p class="ct2_img_desc">点券×108</p>
+						<a  class="fr sp" href="javascript:TGDialogS('pop4');" ontouchend="PTTSendClick('btn','btn_ljlq3','立即领取');"></a>
+					</div>
+				</div>
+				<div class="ct3">
+					<div class="ct3_inne pr">
+						<div class="ct3_inne1 pr">
+							<p class="p_des">选手姓名</p>
+							<img class="flag_img" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag1.jpg" />
+							<a  class="btn_ct3_inne btn_ct3_inne1" href="javascript:TGDialogS('pop_video');" ontouchend="PTTSendClick('btn','btn_void1','视频按钮');"><span class="sp"></span></a>
+							<p class="ct3_inne_desc">TA的冠军热度：<br/> XXXX</p>
+						</div>
+						<div class="ct3_inne2 pr">
+							<p class="p_des">选手姓名</p>
+							<img class="flag_img" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag3.jpg" />
+							<a  class="btn_ct3_inne btn_ct3_inne2" href="javascript:;" ontouchend="PTTSendClick('btn','btn_void2','视频按钮');"><span class="sp"></span></a>
+							<p class="ct3_inne_desc">TA的冠军热度：<br/> XXXX</p>
+						</div>
+						<div class="ct3_inne3 pr">
+							<p class="p_des">选手姓名</p>
+							<img class="flag_img" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag4.jpg" />
+							<a  class="btn_ct3_inne btn_ct3_inne3" href="javascript:;" ontouchend="PTTSendClick('btn','btn_void3','视频按钮');"><span class="sp"></span></a>
+							<p class="ct3_inne_desc">TA的冠军热度：<br/> XXXX</p>
+						</div>
+						<div class="ct3_inne4 pr">
+							<p class="p_des">选手姓名</p>
+							<img class="flag_img" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag2.jpg" />
+							<a  class="btn_ct3_inne btn_ct3_inne4" href="javascript:;" ontouchend="PTTSendClick('btn','btn_void4','视频按钮');"><span class="sp"></span></a>
+							<p class="ct3_inne_desc">TA的冠军热度：<br/> XXXX</p>
+						</div>
+					</div>
+					<p class="ct3_desc">错过精彩比赛？不清楚选手实力？没关系！回顾一下选手集锦吧！</p>
+					<a  class="btn_ct3 sp ma" href="javascript:TGDialogS('pop9');" ontouchend="PTTSendClick('btn','btn_ct3','点我看集锦');"></a>
+				</div>
+			</div>
+		</div>
+		<div class="pop1 pr" id="pop1">
+			<div>
+				<a  class="btn_yes fl " href="javascript:TGDialogS('pop2');" ontouchend="PTTSendClick('btn','btn_yes','是');"></a>
+				<a  class="btn_no fr " href="javascript:;" ontouchend="PTTSendClick('btn','btn_no','否');"></a>
+			</div>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop2" id="pop2">
+			<ul class="c">
+				<li>
+					<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/fore_img1.png" />
+				</li>
+				<li>
+					<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/fore_img2.png" />
+				</li>
+			</ul>
+			<a  class="btn_under ma sp" href="javascript:;" ontouchend="PTTSendClick('btn','btn_under','了解啦~');"></a>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop3" id="pop3">
+			<a  class="btn_pop ma " href="javascript:;" ontouchend="PTTSendClick('btn','btn_pop3','前往完成预测');"></a>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop4" id="pop4">
+			<a  class="btn_pop ma " href="javascript:;" ontouchend="PTTSendClick('btn','btn_pop4','前往观看视频');"></a>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop_video pr" id="pop_video">
+			<div id="video_container" class="video">
+				
+			</div>
+			<a class="dia-close dia-close-video dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop5 pr" id="pop5">
+			<ul class="pop5_list">
+				<li class="pop5_list_li_on">
+					<img class="pop5_img1" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop5_pic1.png" />
+					<img class="pop5_img2" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag2.jpg" />
+					<span class="sp pop5_list_span">选手姓名</span>
+					<em class="sp pop5_list_em"></em>
+				</li>
+				<li>
+					<img class="pop5_img1" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop5_pic1.png" />
+					<img class="pop5_img2" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag2.jpg" />
+					<span class="sp ">选手姓名</span>
+					<em class="sp"></em>
+				</li>
+				<li>
+					<img class="pop5_img1" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop5_pic1.png" />
+					<img class="pop5_img2" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag2.jpg" />
+					<span class="sp ">选手姓名</span>
+					<em class="sp"></em>
+				</li>
+				<li>
+					<img class="pop5_img1" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/pop5_pic1.png" />
+					<img class="pop5_img2" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/flag2.jpg" />
+					<span class="sp">选手姓名</span>
+					<em class="sp"></em>
+				</li>
+			</ul>
+			<a href="javascript:;"  class="btn_qd sp db fl" ontouchend="PTTSendClick('btn','btn_qd12','确定')"></a>
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop6 pr" id="pop6">
+			<ul>
+				<li>1、活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则；</li>
+				<li>2、活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则；</li>
+				<li>3、活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则；</li>
+				<li>4、活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则活动规则；</li>
+			</ul>
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="pop7 pr" id="POP_SHARE6" >
+			<div class='toimg_6' id="toimg_6">
+				<p class="pop7_desc1">xxxx</p>
+				<img class="pop7_img pa" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/img1.png" />
+				<img class="er_img" src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/er_img.jpg" />
+				<div class="pop7_inne pr">
+					<div class="pop7_inne_1 pr">
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+					</div>
+					<div class="pop7_inne_2 pr">
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+					</div>
+					<div class="pop7_inne_3 pr">
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+					</div>
+					<div class="pop7_inne_4 pr">
+						<img src="//game.gtimg.cn/images/speedm/cp/a20190801yzcw/man_img1.png" />
+					</div>
+				</div>
+				<div>
+					<a  class="btn_prese sp  fl" data-html2canvas-ignore href="javascript:takeScreenshot();" ontouchend="PTTSendClick('btn','btn_prese','保存图片');"></a>
+					<a  class="btn_immed sp  fr" data-html2canvas-ignore href="javascript:;" ontouchend="PTTSendClick('btn','btn_immed','立即分享');"></a>
+				</div>
+			</div>
+			<a class="dia-close" data-html2canvas-ignore href="javascript:showDialog.hide()" title="关闭">×</a>
+			
+		</div>
+		<div class="pop8" id="pop8">
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+			<div>
+				<a  class="btn_qq   fl" href="javascript:;" ontouchend="PTTSendClick('btn','btn_qq','qq');"></a>
+				<a  class="btn_wx   fr" href="javascript:;" ontouchend="PTTSendClick('btn','btn_wx','微信');"></a>
+			</div>
+		</div>
+		<div class="pop9" id="pop9">
+			<a class="dia-close" href="javascript:showDialog.hide()" title="关闭">×</a>
+			<div class="dialogs ma" id="pop_swc" > <!----选择大区---->
+		        <div class="dia_pop_swc pr">
+					<div class="swc_box">
+						<select class="swc_sle inp fr" id='syst'>
+							<option>请选择平台</option>
+						</select>
+					</div>
+					<div class="swc_box1">
+						<select class="swc_sle fr" id='syst1'>
+							<option>请选择大区</option>
+						</select>
+					</div>
+					<div class="swc_box">
+						<select class="swc_sle  inp fr" id="role">
+							<option>请选择角色</option>
+						</select>
+					</div>
+		        	 <div class="btn_swc c">
+		        	 	<p class="ma">亲爱的车手，绑定角色后不可修改哟~</p>
+			        	<a href="javascript:;"  class="btn_qd sp db fl" ontouchend="PTTSendClick('btn','btn_qd','确定')"></a>
+			        	<a href="javascript:;"  class="btn_fh sp db fr" ontouchend="PTTSendClick('btn','btn_fh','取消')"></a>
+			        </div>
+		        </div>
+    		</div>
+		</div>
+		<div class="pr pop10" id="pop10">
+			<div>
+				<a  class="btn_yes fl " href="javascript:TGDialogS('pop2');" ontouchend="PTTSendClick('btn','btn_yes','是');"></a>
+				<a  class="btn_no fr " href="javascript:;" ontouchend="PTTSendClick('btn','btn_no','否');"></a>
+			</div>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<div class="float" id="float">
+			
+			<a class="btn_float" href="javascript:TGDialogS('pop6');" title="活动规则"></a>
+		</div>
+		<div class="pop11" id="pop11">
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭"></a>
+		</div>
+		<div class="pop12" id="pop12">
+			<div>
+				<a  class="btn_qq   fl" href="javascript:;" ontouchend="PTTSendClick('btn','btn_qq2','微信');"></a>
+				<a  class="btn_wx   fr" href="javascript:;" ontouchend="PTTSendClick('btn','btn_wx2','朋友圈');"></a>
+			</div>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">x</a>
+		</div>
+		<div class="pop13" id="pop13">
+			<div>
+				<a  class="btn_qq   fl" href="javascript:;" ontouchend="PTTSendClick('btn','btn_qq1','qq好友');"></a>
+				<a  class="btn_wx   fr" href="javascript:;" ontouchend="PTTSendClick('btn','btn_wx1','qq空间');"></a>
+			</div>
+			<a class="dia-close dia-close-video" href="javascript:showDialog.hide()" title="关闭">x</a>
+		</div>
+		<div class="pop14" id="pop14">
+			<div class="img_div" id="img_div">
+			</div>
+			<a class="dia-close" data-html2canvas-ignore href="javascript:showDialog.hide()" title="关闭">×</a>
+		</div>
+		<script src="js/html2canvas.min.js"></script>
+		<script src="//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"></script>
+		<script type="text/javascript" src="js/canvas2image.js" ></script>
+		<script type="text/javascript" src="js/html2canvas.js" ></script>
+		<script>
+			//弹窗截图
+			function takeScreenshot() {
+				var w = $("#POP_SHARE6").width();
+				var h = $("#POP_SHARE6").height();
+				var p=$("#POP_SHARE6").children('p');
+				//要将 canvas 的宽高设置成容器宽高的 2 倍
+				var canvas = document.createElement("canvas");
+				canvas.width = w * 3+1;
+				canvas.height = h * 3+1;
+				canvas.style.width = w*3+1 + "rem";
+				canvas.style.height = h*3 + "rem";
+				var context = canvas.getContext("2d");
+				
+				$('.pop7_desc1').css('-webkit-text-fill-color','cornflowerblue');
+				console.log(".......")
+				//添加渐变色字
+				context.font="30px Verdana";
+				// Create gradient
+				var gradient=context.createLinearGradient(0,0,0,p.height());
+				gradient.addColorStop("0","magenta");
+				gradient.addColorStop("0.5","blue");
+				gradient.addColorStop("1.0","red");
+				// Fill with gradient
+				context.fillStyle=gradient;
+				context.fillText("hjkhjkhk",10,90);
+				console.log("ppp"+"  "+p.text());
+				context.translate(-105,-90);
+				//然后将画布缩放，将图像放大两倍画到画布上
+				context.scale(3,3);
+				html2canvas(document.querySelector("#POP_SHARE6"), {
+				    canvas: canvas,
+				    height:2*h,
+				    width: 2*w,
+				    useCORS: true,
+				    onrendered: function(canvas) {
+				         document.body.appendChild(canvas);
+					    var img=$('#imgId');
+					     $(".img_div").append(Canvas2Image.convertToImage(canvas,w*3,h*3, "png"));//这是放大了很3倍的图片
+						
+				    }
+				});
+				$('#POP_SHARE6').hide();
+					TGDialogS('pop14');
+		}
+		</script>
+		
+			
+		</script>
+		<script>		
+			 $('.btn_ct3_inne1').on('click',function(){
+		    	TGDialogS('pop_video');
+		    	getvideo('video_container','u05316kb46e');
+		    });
+		     $('.btn_ct3_inne2').on('click',function(){
+		    	TGDialogS('pop_video');
+		    	getvideo('video_container','u05316kb46e');
+		    });
+		     $('.btn_ct3_inne3').on('click',function(){
+		    	TGDialogS('pop_video');
+		    	getvideo('video_container','u05316kb46e');
+		    });
+		     $('.btn_ct3_inne4').on('click',function(){
+		    	TGDialogS('pop_video');
+		    	getvideo('video_container','u05316kb46e');
+		    });
+		    
+		    $('.dia-close-video').on('click',function () {
+					$('#video_container').html('');
+					onOff = 0
+				})
+		    $('.pop5_list li').on('click',function(){
+		    	$(this).each(function(){
+		    		$(this).addClass("pop5_list_li_on").siblings().removeClass("pop5_list_li_on");
+			    	$(this).children("em").addClass("pop5_list_em").parent().siblings().children("em").removeClass("pop5_list_em");
+			    	$(this).children("span").addClass("pop5_list_span").parent().siblings().children("span").removeClass("pop5_list_span");
+		    	})
+		    })
+		    $('.btn_ok').on('click',function(){
+		    	$(this).addClass('btn_ct1_on');
+		    	$(this).html("已预测");
+		    })
+		    
+//		  $(".btn_prese").on('click',function(){
+//			html2canvas($("#pop7"), {
+//		         onrendered: function (canvas) {
+//		             var url = canvas.toDataURL("image/png");
+//		　　　　　　　 window.location.href = url;
+//		           }
+//		   });
+//		  })
+		  
+		  $(document).ready(function(){
+				$('.pop').attr('style','display: none;');/*展示所有弹窗   使用时改为block*/
+			})
+		</script>
+		<script src="//ossweb-img.qq.com/images/js/mobile_bundle/milo.js"></script>
+		<script>
+		   //弹窗
+			function TGDialogS(e) {
+				need('biz.dialog-min', function(Dialog) {
+					Dialog.show({
+						id: e,
+						bgcolor: '#000',
+						opacity: 60,
+						onCloseCallback: function() {
+							$('#video').html('');
+						}
+					});
+				});
+			}
+			function closeDialog() {
+				need('biz.dialog-min', function(Dialog) {
+					Dialog.hide();
+				});
+			};
+
+		</script>
+		<script src="//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+		<script>
+			 //视频
+		   function getvideo(vbox,vid){
+				var player = new Txplayer({
+					containerId: vbox,
+					vid: vid,
+					width: '100%',
+					height: '100%',
+					autoplay: true
+				});
+			}
+		</script>
+		<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+		<script>
+			//此段代码不能放到外链JS中，
+			var setSite = { //设置网站属性
+				siteType: "a20190801yzcw", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+				pageType: "index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+				pageName: "首页", //必填项:页面中文名
+				osact: 0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+				ingame: 0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+				stayTime: 0 //选填项:是否需要统计停留时长boolean；默认是0
+			}
+			if(typeof(pgvMain) == 'function') pgvMain();
+		</script>
+	</body>
+</html>
